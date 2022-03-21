@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="399.0" prefWidth="709.0" stylesheets="@CSS/StyleSheet.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lab6.map_socialnetwork_gui.controllers.MainController">
+    <TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="874.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab text="Carti disponibile">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="431.0" prefWidth="874.0">
+                   <children>
+                      <SplitPane dividerPositions="0.6857429718875502" orientation="VERTICAL" prefHeight="335.0" prefWidth="720.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                         <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                               <children>
+                                  <TableView prefHeight="270.0" prefWidth="720.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                     <columns>
+                                       <TableColumn prefWidth="75.0" text="BookId" />
+                                        <TableColumn prefWidth="180.0" text="ISBN" />
+                                        <TableColumn prefWidth="180.0" text="Titlu" />
+                                        <TableColumn prefWidth="180.0" text="Autor" />
+                                       <TableColumn prefWidth="75.0" text="Anul Aparitiei" />
+                                     </columns>
+                                    <columnResizePolicy>
+                                       <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    </columnResizePolicy>
+                                  </TableView>
+                               </children>
+                            </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="92.0" prefWidth="719.0">
+                               <children>
+                                  <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="427.0" text="Actualizeaza lista carti disponibile">
+                                     <font>
+                                        <Font size="15.0" />
+                                     </font>
+                                  </Button>
+                                  <Button layoutX="23.0" layoutY="72.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="159.0" text="Imprumuta">
+                                     <font>
+                                        <Font size="15.0" />
+                                     </font>
+                                  </Button>
+                               </children>
+                            </AnchorPane>
+                         </items>
+                      </SplitPane>
+                   </children></AnchorPane>
+          </content>
+        </Tab>
+         <Tab text="Carti imprumutate">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="431.0" prefWidth="874.0">
+                  <children>
+                     <SplitPane dividerPositions="0.6857429718875502" orientation="VERTICAL" prefHeight="335.0" prefWidth="720.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <items>
+                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                              <children>
+                                 <TableView prefHeight="270.0" prefWidth="720.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                       <TableColumn prefWidth="75.0" text="BookId" />
+                                       <TableColumn prefWidth="180.0" text="ISBN" />
+                                       <TableColumn prefWidth="180.0" text="Titlu" />
+                                       <TableColumn prefWidth="180.0" text="Autor" />
+                                       <TableColumn prefWidth="75.0" text="Anul Aparitiei" />
+                                    </columns>
+                                    <columnResizePolicy>
+                                       <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    </columnResizePolicy>
+                                 </TableView>
+                              </children>
+                           </AnchorPane>
+                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="92.0" prefWidth="719.0">
+                              <children>
+                                 <Button layoutX="21.0" layoutY="21.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="159.0" text="Anulare">
+                                    <font>
+                                       <Font size="15.0" />
+                                    </font>
+                                 </Button>
+                              </children>
+                           </AnchorPane>
+                        </items>
+                     </SplitPane>
+                  </children>
+               </AnchorPane>
+            </content>
+         </Tab>
+      </tabs>
+    </TabPane>
+</AnchorPane>
