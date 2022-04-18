@@ -1,5 +1,9 @@
 # LaboratorISS_StoianSilviu
 
+* pe branch-ul main am rezolvatrea pentru lab1,2,3 in folder-ul Lab1_2_3
+* pe branch-ul main am rezolvat cerinta pentru lab4(rafinare diagrama de clase, scenarii de utilizare pentru interatia 1)
+* pe branch-ul lab5Iteratia1 am implementarea in cod Java pentru iteratia1(login subscriber/librarian,register subscriber,findAllBooks)
+
 1. BIBLIOTECA 
 O biblioteca ofera abonatilor sai o lista de carti ce pot fi imprumutate. Pentru un abonat, se retin în 
 sistem (cel putin) informații legate de cnp, nume, adresa, telefon și un cod unic de identificare a 
