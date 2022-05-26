@@ -24,11 +24,11 @@
                                   <TableView fx:id="tableViewBooks" prefHeight="270.0" prefWidth="720.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                      <columns>
                                        <TableColumn prefWidth="75.0" text="SubsriberCNP" visible="false" />
-                                       <TableColumn prefWidth="75.0" text="BookId" />
-                                        <TableColumn prefWidth="180.0" text="ISBN" />
-                                        <TableColumn prefWidth="180.0" text="Titlu" />
-                                        <TableColumn prefWidth="180.0" text="Autor" />
-                                       <TableColumn prefWidth="75.0" text="Anul Aparitiei" />
+                                       <TableColumn fx:id="tableColumnBookId" prefWidth="75.0" text="BookId" />
+                                        <TableColumn fx:id="tableColumnISBN" prefWidth="180.0" text="ISBN" />
+                                        <TableColumn fx:id="tableColumnTitlu" prefWidth="180.0" text="Titlu" />
+                                        <TableColumn fx:id="tableColumnAutor" prefWidth="180.0" text="Autor" />
+                                       <TableColumn fx:id="tableColumnAn" prefWidth="75.0" text="Anul Aparitiei" />
                                      </columns>
                                     <columnResizePolicy>
                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -38,16 +38,17 @@
                             </AnchorPane>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="92.0" prefWidth="719.0">
                                <children>
-                                  <Button layoutX="528.0" layoutY="15.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="291.0" text="Marcheaza ca restituita">
+                                  <Button fx:id="buttonReturnBook" layoutX="528.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleReturnBookClicked" prefHeight="45.0" prefWidth="291.0" text="Marcheaza ca restituita">
                                      <font>
                                         <Font size="15.0" />
                                      </font>
                                   </Button>
-                                 <TextField layoutX="27.0" layoutY="24.0" prefHeight="26.0" prefWidth="218.0" promptText="Search By CNP">
+                                 <TextField fx:id="textFieldSearchCNP" layoutX="27.0" layoutY="24.0" prefHeight="31.0" prefWidth="258.0" promptText="Search By CNP">
                                     <font>
                                        <Font size="15.0" />
                                     </font>
                                  </TextField>
+                                 <Button fx:id="buttonShowBorrowed" layoutX="27.0" layoutY="66.0" mnemonicParsing="false" onAction="#handleButtonShowBooksClicked" prefHeight="45.0" prefWidth="266.0" text="Show borrowed books" />
                                </children>
                             </AnchorPane>
                          </items>
